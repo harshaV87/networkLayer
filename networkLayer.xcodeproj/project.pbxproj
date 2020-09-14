@@ -13,6 +13,14 @@
 		02658A0B24DF2EA3004B2337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02658A0924DF2EA3004B2337 /* Main.storyboard */; };
 		02658A0D24DF2EA4004B2337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02658A0C24DF2EA4004B2337 /* Assets.xcassets */; };
 		02658A1024DF2EA4004B2337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02658A0E24DF2EA4004B2337 /* LaunchScreen.storyboard */; };
+		02658A1E24DF302B004B2337 /* enPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A1D24DF302B004B2337 /* enPointProtocol.swift */; };
+		02658A2024DF31DC004B2337 /* HTTPMethod .swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A1F24DF31DC004B2337 /* HTTPMethod .swift */; };
+		02658A2224DF32D4004B2337 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2124DF32D4004B2337 /* HTTPTask.swift */; };
+		02658A2424DF34D6004B2337 /* parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2324DF34D6004B2337 /* parameters.swift */; };
+		02658A2624DF4178004B2337 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2524DF4178004B2337 /* URLParameterEncoder.swift */; };
+		02658A2824DF5D58004B2337 /* jsonParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2724DF5D57004B2337 /* jsonParameterEncoder.swift */; };
+		02658A2A24DF6FFB004B2337 /* NetworkRouter .swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2924DF6FFB004B2337 /* NetworkRouter .swift */; };
+		02658A2C24DF7628004B2337 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02658A2B24DF7628004B2337 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		02658A0C24DF2EA4004B2337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02658A0F24DF2EA4004B2337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02658A1124DF2EA4004B2337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02658A1D24DF302B004B2337 /* enPointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enPointProtocol.swift; sourceTree = "<group>"; };
+		02658A1F24DF31DC004B2337 /* HTTPMethod .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod .swift"; sourceTree = "<group>"; };
+		02658A2124DF32D4004B2337 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		02658A2324DF34D6004B2337 /* parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parameters.swift; sourceTree = "<group>"; };
+		02658A2524DF4178004B2337 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		02658A2724DF5D57004B2337 /* jsonParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonParameterEncoder.swift; sourceTree = "<group>"; };
+		02658A2924DF6FFB004B2337 /* NetworkRouter .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkRouter .swift"; sourceTree = "<group>"; };
+		02658A2B24DF7628004B2337 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,69 @@
 			children = (
 				02658A0324DF2EA3004B2337 /* AppDelegate.swift */,
 				02658A0524DF2EA3004B2337 /* SceneDelegate.swift */,
-				02658A0724DF2EA3004B2337 /* ViewController.swift */,
+				02658A1824DF2F5C004B2337 /* ViewController  */,
+				02658A1724DF2F38004B2337 /* Networking  */,
 				02658A0924DF2EA3004B2337 /* Main.storyboard */,
 				02658A0C24DF2EA4004B2337 /* Assets.xcassets */,
 				02658A0E24DF2EA4004B2337 /* LaunchScreen.storyboard */,
 				02658A1124DF2EA4004B2337 /* Info.plist */,
 			);
 			path = networkLayer;
+			sourceTree = "<group>";
+		};
+		02658A1724DF2F38004B2337 /* Networking  */ = {
+			isa = PBXGroup;
+			children = (
+				02658A1C24DF2FBB004B2337 /* Encoding  */,
+				02658A1B24DF2FA7004B2337 /* servicesIn  */,
+				02658A1A24DF2F8F004B2337 /* Network Manager  */,
+				02658A1924DF2F73004B2337 /* End points */,
+			);
+			path = "Networking ";
+			sourceTree = "<group>";
+		};
+		02658A1824DF2F5C004B2337 /* ViewController  */ = {
+			isa = PBXGroup;
+			children = (
+				02658A0724DF2EA3004B2337 /* ViewController.swift */,
+			);
+			path = "ViewController ";
+			sourceTree = "<group>";
+		};
+		02658A1924DF2F73004B2337 /* End points */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "End points";
+			sourceTree = "<group>";
+		};
+		02658A1A24DF2F8F004B2337 /* Network Manager  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Manager ";
+			sourceTree = "<group>";
+		};
+		02658A1B24DF2FA7004B2337 /* servicesIn  */ = {
+			isa = PBXGroup;
+			children = (
+				02658A1D24DF302B004B2337 /* enPointProtocol.swift */,
+				02658A1F24DF31DC004B2337 /* HTTPMethod .swift */,
+				02658A2124DF32D4004B2337 /* HTTPTask.swift */,
+				02658A2924DF6FFB004B2337 /* NetworkRouter .swift */,
+				02658A2B24DF7628004B2337 /* Router.swift */,
+			);
+			path = "servicesIn ";
+			sourceTree = "<group>";
+		};
+		02658A1C24DF2FBB004B2337 /* Encoding  */ = {
+			isa = PBXGroup;
+			children = (
+				02658A2324DF34D6004B2337 /* parameters.swift */,
+				02658A2524DF4178004B2337 /* URLParameterEncoder.swift */,
+				02658A2724DF5D57004B2337 /* jsonParameterEncoder.swift */,
+			);
+			path = "Encoding ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02658A2C24DF7628004B2337 /* Router.swift in Sources */,
+				02658A2624DF4178004B2337 /* URLParameterEncoder.swift in Sources */,
+				02658A2224DF32D4004B2337 /* HTTPTask.swift in Sources */,
+				02658A2A24DF6FFB004B2337 /* NetworkRouter .swift in Sources */,
 				02658A0824DF2EA3004B2337 /* ViewController.swift in Sources */,
 				02658A0424DF2EA3004B2337 /* AppDelegate.swift in Sources */,
 				02658A0624DF2EA3004B2337 /* SceneDelegate.swift in Sources */,
+				02658A2024DF31DC004B2337 /* HTTPMethod .swift in Sources */,
+				02658A2824DF5D58004B2337 /* jsonParameterEncoder.swift in Sources */,
+				02658A2424DF34D6004B2337 /* parameters.swift in Sources */,
+				02658A1E24DF302B004B2337 /* enPointProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
